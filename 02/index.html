@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한화테크원 - 대한민국 CCTV NO1 - COPY</title>
+    <!-- 제이쿼리 자리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- 외부 js 라이브러리/ 웹폰트/ 폰트어썸 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- 내가만든 css/js -->
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <div class="header-wrap w100-box">
+        <div class="header row">
+            <div class="logo-box cell">
+                <svg id="레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 195.81 56.62"><defs><style>.cls-1{fill:#fbb584;}.cls-2{fill:#f89b6c;}.cls-3{fill:#f37321;}</style></defs><path class="cls-1" d="M23.08,29.06c-.81-7.37,6.92-13.28,17.26-13.2S59.72,22,60.53,29.34s-6.91,13.28-17.25,13.2-19.39-6.11-20.2-13.48m39.37,2.29c-.93-9.14-11.34-16.63-23.24-16.73S18.42,21.86,19.35,31,30.69,47.62,42.59,47.72s20.8-7.23,19.86-16.37" transform="translate(0 -0.08)"/><path class="cls-2" d="M44.48,47.9c-5.86,6.1-15.27,6.64-21,1.1s-5.65-14.92.22-21,15.27-6.64,21-1.14,5.65,14.92-.22,21M22.77,27.8c-6.82,7.12-6.93,18.07-.25,24.46s17.61,5.8,24.42-1.32,6.93-18.07.25-24.46-17.61-5.8-24.42,1.32" transform="translate(0 -0.08)"/><path class="cls-3" d="M23.39,4.88C35.58.31,47.64,4.93,50.32,15.2s-5,22.3-17.23,26.87S8.84,42,6.17,31.75s5-22.3,17.22-26.87M12.07,8.8C-.58,18.82-3.8,33.33,4.87,41.21s26,6.16,38.62-3.86S59.36,12.83,50.68,5s-26-6.16-38.61,3.85" transform="translate(0 -0.08)"/><path d="M85.16,22.19H71V19.92H85.2Zm-7.1,10a6.78,6.78,0,0,1-4.38-1.36,4,4,0,0,1,0-6.5,7.74,7.74,0,0,1,8.76,0,4,4,0,0,1,0,6.5,6.82,6.82,0,0,1-4.38,1.34Zm1.08,5.22H91.42v2.43h-13q-4.22,0-4.22-3.93V33.36h3.17v2.16a1.63,1.63,0,0,0,1.36,1.86,1.88,1.88,0,0,0,.41,0ZM74.41,16.8H81.7v2.3H74.41ZM78.06,30a3.33,3.33,0,0,0,2.12-.69,2.07,2.07,0,0,0,.52-2.88,2.14,2.14,0,0,0-.52-.52,3.62,3.62,0,0,0-4.25,0,2.08,2.08,0,0,0-.5,2.9,2.37,2.37,0,0,0,.5.5A3.34,3.34,0,0,0,78.06,30Zm13.25-7h3.27v2.48H91.31v8H88.17V17.2h3.14Z" transform="translate(0 -0.08)"/><path d="M102.82,32a6.15,6.15,0,0,1-2.88-1.27,4,4,0,0,1,.06-6.46,7.74,7.74,0,0,1,8.76,0,4,4,0,0,1,0,6.46A6.29,6.29,0,0,1,106,32v2.4h3.51c3.17,0,4.75-1.23,4.75-3.67V17.2h3.14v7.6h3.28v2.51H117.4V39.88h-3.14V35.62A6.16,6.16,0,0,1,110,36.89H96.72V34.44h6.1Zm8.61-9.85H97.22V19.92h14.21ZM100.74,16.8H108v2.3h-7.28ZM104.38,30a3.33,3.33,0,0,0,2.12-.69,2.07,2.07,0,0,0,.52-2.88,2.14,2.14,0,0,0-.52-.52,3.62,3.62,0,0,0-4.25,0,2.08,2.08,0,0,0-.5,2.9,2.37,2.37,0,0,0,.5.5A3.34,3.34,0,0,0,104.38,30Z" transform="translate(0 -0.08)"/><path d="M134.32,32.67v2.45h-6.9c-2.71,0-4.07-1.39-4.06-4.17V17.57h9.82V20H126.4v4.8h5.7v2.43h-5.7v3.54c0,1.27.55,1.9,1.66,1.9Zm2.21-15.47h3V39.88h-3V27.34h-2.85V24.8h2.85Zm4.91,0h3.09V39.88h-3.09Z" transform="translate(0 -0.08)"/><path d="M171.3,37.53H148.15V35H171.3ZM150.45,25.59h14.81v-3.4a1.72,1.72,0,0,0-1.47-1.94,1.89,1.89,0,0,0-.53,0H150.45V17.81h14c2.65,0,4,1.32,4,4V32.7h-3.16V28H150.45Z" transform="translate(0 -0.08)"/><path d="M175.71,23a5.21,5.21,0,0,1,2-4.23,8.18,8.18,0,0,1,9.79,0,5.21,5.21,0,0,1,2,4.23,5.12,5.12,0,0,1-1.61,3.88h3.38v2.43h-8v3.41h-3.14V29.34H174.4V26.91h3A5.14,5.14,0,0,1,175.71,23Zm7.1,14.36h13v2.43H181.94c-2.82,0-4.22-1.4-4.22-4.2v-2h3.14v1.79a1.73,1.73,0,0,0,1.43,2,1.81,1.81,0,0,0,.52,0Zm-3.9-14.3A3.28,3.28,0,0,0,180,25.62a3.94,3.94,0,0,0,5.19,0,3.25,3.25,0,0,0,1.08-2.53,3.39,3.39,0,0,0-1.08-2.59,3.67,3.67,0,0,0-2.59-1,3.75,3.75,0,0,0-2.6,1,3.38,3.38,0,0,0-1.09,2.59Zm16.81-5.89V34.86h-3.14V17.2Z" transform="translate(0 -0.08)"/></svg>
+            </div> 
+            <div class="nav-box"> 
+                <ul class="row">
+                    <li class="cell"><a href="#">솔루션</a></li>
+                    <li class="cell"><a href="#">제품</a></li>
+                    <li class="cell"><a href="#">기술</a></li>
+                    <li class="cell"><a href="#">지원</a></li>
+                    <li class="cell"><a href="#">서비스 지정점</a></li>
+                    <li class="cell"><a href="#"><img src="./img/ico-header-search-on.png" alt="#"></a></li>
+                </ul>
+            </div>
+            <div class="site-box cell-r">
+                <ul class="row">
+                    <li class="cell"><a href="#"><img src="./img/logo-ddns.png" alt="#"></a></li>
+                    <li class="cell"><a href="#"><img src="./img/logo-step.png" alt="#"></a></li>
+                    <li class="cell"><a href="#"><p>Region</p></a></li>
+                    <li class="cell"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-2-depth-wrap">
+            <div class="nav-2-depth con row">
+                <div class="left row cell">
+                    <ul class="cell">
+                        <li><a href="#">코로나 19</a></li>
+                        <li><a href="#">스마트 시티</a></li>
+                        <li><a href="#">아파트</a></li>
+                        <li><a href="#">프로젝트 사례</a></li>
+                    </ul>
+                    <ul class="cell">
+                        <li><a href="#">리테일</a></li>
+                        <li><a href="#">중대재해 예방</a></li>
+                        <li><a href="#">교통</a></li>
+                    </ul>
+                    <ul class="cell">
+                        <li><a href="#">병원</a></li>
+                        <li><a href="#">은행</a></li>
+                        <li><a href="#">교육</a></li>
+                    </ul>
+                </div>
+                <div class="right cell-r">
+                    <div class="slider-wrap">
+                        <div class="slider">
+                            <div class="content">
+                                <div class="img-box">
+                                    <div class="img w100-box" style="background-image: url(./img/section03-content-01-01.jpg);"></div>
+                                </div>
+                                <div class="overlay-box">
+                                    <div class="title-box"><P>호텔 / 주거</P></div>
+                                    <div class="txt-box">
+                                        디에이치 자이 아파트 -<br>
+                                        대한민국
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="img-box">
+                                    <div class="img w100-box" style="background-image: url(./img/section03-content-01-02.jpg);"></div>
+                                </div>
+                                <div class="overlay-box">
+                                    <div class="title-box"><P>호텔 / 주거</P></div>
+                                    <div class="txt-box">
+                                        디에이치 자이 아파트 -<br>
+                                        대한민국
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="img-box">
+                                    <div class="img w100-box" style="background-image: url(./img/section03-content-01-03.jpg);"></div>
+                                </div>
+                                <div class="overlay-box">
+                                    <div class="title-box"><P>호텔 / 주거</P></div>
+                                    <div class="txt-box">
+                                        디에이치 자이 아파트 -<br>
+                                        대한민국
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="img-box">
+                                    <div class="img w100-box" style="background-image: url(./img/section03-content-01-04.jpg);"></div>
+                                </div>
+                                <div class="overlay-box">
+                                    <div class="title-box"><P>호텔 / 주거</P></div>
+                                    <div class="txt-box">
+                                        디에이치 자이 아파트 -<br>
+                                        대한민국
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prev-btn btn"><i class="fa-solid fa-arrow-left"></i></div>
+                        <div class="next-btn btn"><i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="btn-box row">
+        <a href="#" class="btn cell">
+            <i class="fa-solid fa-headset"></i>
+            <p>고객지원</p>
+        </a>
+        <a href="#" class="btn cell">
+            <i class="fa-solid fa-download"></i>
+            <p>다운로드<br>
+                센터
+            </p>
+        </a>
+        <a href="#" class="btn cell">
+            <i class="fa-solid fa-hard-drive"></i>
+            <p>Toolbox<br>
+                plus
+            </p>
+        </a>
+    </div>
+    <div class="up-btn">
+        <i class="fa-solid fa-angle-up"></i>
+        <p>TOP</p>
+    </div>
+    <div class="slider-wrap01 w100-box">
+        <div class="slider">
+            <div class="content">
+                <div class="w100-box">
+                    <div class="img-box" style="background-image: url(./img/content-01-01.png) ;"></div>
+                    <div class="overlay-box">
+                        <div class="text-box">
+                            <div class="t-box row">
+                                <img src="./img/logo-wisenet-wb.png" alt="WISENET DDNS" class="cell">
+                            <p class="cell">&nbsp;AI</p>
+                            </div>
+                            <div class="m-txt">
+                            Virtual Exhibition
+                            </div>
+                            <a href="#">
+                                <div class="btn">자세히보기<i class="fa-solid fa-arrow-right"></i></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="w100-box">
+                    <div class="img-box" style="background-image: url(./img/content-01-02.png) ;"></div>
+                    <div class="overlay-box">
+                        <div class="text-box">
+                            <div class="t-box row">
+                                <img src="./img/logo-wisenet-wb.png" alt="WISENET DDNS" class="cell">
+                            <p class="cell">&nbsp;P Series</p>
+                            </div>
+                            <div class="m-txt">
+                            2PM AI Camera
+                            </div>
+                            <a href="#">
+                                <div class="btn">자세히보기<i class="fa-solid fa-arrow-right"></i></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="w100-box">
+                    <div class="img-box" style="background-image: url(./img/content-01-03.png) ;"></div>
+                    <div class="overlay-box">
+                        <div class="text-box">
+                            <div class="t-box row">
+                            <p class="cell">한화테크원 New PTZ Plus</p>
+                            </div>
+                            <div class="m-txt">
+                            4K 30배 줌으로<br>
+                            선명한 영상을 경험하세요.
+                            </div>
+                            <a href="#">
+                                <div class="btn">자세히보기<i class="fa-solid fa-arrow-right"></i></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider-wrap02 con row">
+        <div class="left-side"></div>
+        <div class="slider cell">
+            <div class="content">PRODUCT</div>
+            <div class="content">SOLUTION</div>
+            <div class="content">SUPPORT</div>
+        </div>
+        <div class="content-box cell-r row">
+            <div class="content cell">
+                <a class="row" href="#">
+                    <svg class="cell" xmlns="http://www.w3.org/2000/svg" width="43.583" height="43.534" viewBox="0 0 43.583 43.534">
+                        <g id="security-camera" transform="translate(0.4 0.419)">
+                          <g id="그룹_497" data-name="그룹 497" transform="translate(0 0)">
+                            <g id="그룹_496" data-name="그룹 496" transform="translate(0 0)">
+                              <path id="패스_2332" data-name="패스 2332" d="M41.994,17.827l-1.247-.582a6.318,6.318,0,0,0,.642-1.081L42.429,13.9a1.252,1.252,0,0,0-.605-1.663L16.888.6A6.264,6.264,0,0,0,8.573,3.624L5.4,10.429a6.264,6.264,0,0,0,3.027,8.315l7.949,3.707L11.8,30.211H10.178V28.96a3.759,3.759,0,0,0-3.754-3.754H1.251A1.251,1.251,0,0,0,0,26.457V41.474a1.251,1.251,0,0,0,1.251,1.251H6.424a3.759,3.759,0,0,0,3.754-3.754V37.72h3.754a3.776,3.776,0,0,0,3.223-1.829l6.059-10.25,5.627,2.624a3.752,3.752,0,0,0,4.989-1.816l.529-1.134,3.4,1.587a1.251,1.251,0,0,0,1.663-.605L42.6,19.49A1.252,1.252,0,0,0,41.994,17.827ZM7.676,38.972a1.253,1.253,0,0,1-1.251,1.251H2.5V27.709H6.424A1.253,1.253,0,0,1,7.676,28.96V38.972Zm7.33-4.361a1.257,1.257,0,0,1-1.073.607H10.178v-2.5h2.337a1.251,1.251,0,0,0,1.078-.616l5.061-8.585,2.281,1.064Zm16.557-9.22A1.251,1.251,0,0,1,29.9,26L15.856,19.447l5.97-4.738a1.245,1.245,0,0,1,1.307-.154l9.94,4.635a6.318,6.318,0,0,0,1.187.416Zm2.568-8.468-9.94-4.635a3.734,3.734,0,0,0-3.921.462l-6.344,5.035a1.244,1.244,0,0,1-1.307.154L9.484,16.476h0a3.759,3.759,0,0,1-1.816-4.989l3.173-6.805a3.759,3.759,0,0,1,4.989-1.816L39.649,13.972l-.529,1.134A3.752,3.752,0,0,1,34.131,16.922ZM37.686,24.1l-2.268-1.058L37,19.643a6.286,6.286,0,0,0,1.664-.606l1.134.529Z" transform="translate(0 -0.011)" fill="#8a8a8a" stroke="#fff" stroke-width="0.8"/>
+                            </g>
+                          </g>
+                          <g id="그룹_499" data-name="그룹 499" transform="translate(25.577 19.15)">
+                            <g id="그룹_498" data-name="그룹 498">
+                              <path id="패스_2333" data-name="패스 2333" d="M312.212,231.538l-2.353-1.1a1.3,1.3,0,1,0-1.1,2.353l2.353,1.1a1.3,1.3,0,1,0,1.1-2.353Z" transform="translate(-308.012 -230.319)" fill="#8a8a8a" stroke="#fff" stroke-width="0.8"/>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                    <p class="cell">카메라</p>
+                </a>
+            </div>
+            <div class="content cell">
+                <a href="#">
+                    <svg class="cell" xmlns="http://www.w3.org/2000/svg" width="35.597" height="35.597" viewBox="0 0 35.597 35.597">
+                        <g id="servers_1_" data-name="servers (1)" opacity="0.996">
+                          <g id="그룹_501" data-name="그룹 501">
+                            <g id="그룹_500" data-name="그룹 500">
+                              <path id="패스_2334" data-name="패스 2334" d="M256.742,278.816h11.866a.742.742,0,1,0,0-1.483H256.742a.742.742,0,1,0,0,1.483Z" transform="translate(-238.201 -258.051)" fill="#8a8a8a"/>
+                              <path id="패스_2335" data-name="패스 2335" d="M35.6,14.091V11.124a3.675,3.675,0,0,0-.567-1.947.581.581,0,0,0-.021-.055L30.424,1.75A3.688,3.688,0,0,0,27.275,0H8.324A3.686,3.686,0,0,0,5.175,1.75L.589,9.122c-.009.015-.009.031-.018.047A3.67,3.67,0,0,0,0,11.124v2.966a3.694,3.694,0,0,0,1.507,2.966A3.692,3.692,0,0,0,0,20.023V22.99a3.694,3.694,0,0,0,1.507,2.966A3.692,3.692,0,0,0,0,28.923v2.966A3.713,3.713,0,0,0,3.708,35.6h9.724a.742.742,0,1,0,0-1.483H3.708a2.228,2.228,0,0,1-2.225-2.225V28.923A2.227,2.227,0,0,1,3.708,26.7H16.114a.742.742,0,1,0,0-1.483H3.708A2.228,2.228,0,0,1,1.483,22.99V20.023A2.227,2.227,0,0,1,3.708,17.8H31.889a2.228,2.228,0,0,1,2.225,2.225V22.99a2.206,2.206,0,0,1-.234.97.742.742,0,0,0,1.332.653A3.648,3.648,0,0,0,35.6,22.99V20.023a3.694,3.694,0,0,0-1.507-2.966A3.7,3.7,0,0,0,35.6,14.091ZM6.434,2.533a2.209,2.209,0,0,1,1.888-1.05H27.273a2.214,2.214,0,0,1,1.89,1.05l3.06,4.917a3.1,3.1,0,0,0-.334-.034H3.708c-.114,0-.222.022-.334.033Zm27.68,11.557a2.228,2.228,0,0,1-2.225,2.225H3.708a2.228,2.228,0,0,1-2.225-2.225V11.124A2.227,2.227,0,0,1,3.708,8.9H31.889a2.227,2.227,0,0,1,2.225,2.225v2.966Z" transform="translate(0 0)" fill="#8a8a8a"/>
+                              <path id="패스_2336" data-name="패스 2336" d="M42.667,407.558a2.225,2.225,0,1,0,2.225-2.225A2.227,2.227,0,0,0,42.667,407.558Zm2.966,0a.742.742,0,1,1-.742-.742A.742.742,0,0,1,45.633,407.558Z" transform="translate(-39.701 -377.152)" fill="#8a8a8a"/>
+                              <path id="패스_2337" data-name="패스 2337" d="M228.908,322.966c-.135,0-.27.007-.4.019A6.652,6.652,0,0,0,216.335,326a3.708,3.708,0,0,0,.708,7.348h11.866a5.191,5.191,0,1,0,0-10.382Zm0,8.9H217.042a2.225,2.225,0,1,1,0-4.45.742.742,0,0,0,.742-.742,5.172,5.172,0,0,1,9.7-2.524.741.741,0,0,0,.777.366,3.757,3.757,0,0,1,.65-.067,3.708,3.708,0,0,1,0,7.416Z" transform="translate(-198.502 -297.752)" fill="#8a8a8a"/>
+                              <path id="패스_2338" data-name="패스 2338" d="M268.607,149.333H256.742a.742.742,0,1,0,0,1.483h11.866a.742.742,0,1,0,0-1.483Z" transform="translate(-238.201 -138.951)" fill="#8a8a8a"/>
+                              <path id="패스_2339" data-name="패스 2339" d="M268.607,192H256.742a.742.742,0,1,0,0,1.483h11.866a.742.742,0,1,0,0-1.483Z" transform="translate(-238.201 -178.651)" fill="#8a8a8a"/>
+                              <path id="패스_2340" data-name="패스 2340" d="M44.892,149.333a2.225,2.225,0,1,0,2.225,2.225A2.227,2.227,0,0,0,44.892,149.333Zm0,2.966a.742.742,0,1,1,.742-.742A.742.742,0,0,1,44.892,152.3Z" transform="translate(-39.701 -138.951)" fill="#8a8a8a"/>
+                              <path id="패스_2341" data-name="패스 2341" d="M42.667,279.558a2.225,2.225,0,1,0,2.225-2.225A2.228,2.228,0,0,0,42.667,279.558Zm2.966,0a.742.742,0,1,1-.742-.742A.742.742,0,0,1,45.633,279.558Z" transform="translate(-39.701 -258.051)" fill="#8a8a8a"/>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>    
+                   <p class="cell">저장장치</p>
+                </a>
+            </div>
+            <div class="content cell">
+                <a href="#">
+                    <svg class="cell" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+                        <image id="coding" width="48" height="48" opacity="0.454" xlink:href="data:image/png;base64,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"/>
+                      </svg>                      
+                   <p class="cell">소프트웨어</p>
+                </a>
+            </div>
+            <div class="content cell">
+                <a href="#">
+                    <svg class="cell" xmlns="http://www.w3.org/2000/svg" width="41.48" height="41.48" viewBox="0 0 41.48 41.48">
+                        <g id="lens" transform="translate(0.4 0.4)" opacity="0.454">
+                          <path id="패스_2355" data-name="패스 2355" d="M20.34,0A20.34,20.34,0,1,0,40.68,20.34,20.384,20.384,0,0,0,20.34,0Zm0,38.3A17.956,17.956,0,1,1,38.3,20.34,17.977,17.977,0,0,1,20.34,38.3Z" stroke="#fff" stroke-width="0.8"/>
+                          <path id="패스_2356" data-name="패스 2356" d="M75.634,60H75.6a15.6,15.6,0,0,0-.012,31.2h.02A15.6,15.6,0,0,0,75.634,60Zm3.434,21.57H72.154L68.707,75.6l3.427-5.968h6.914L82.5,75.6ZM62.388,75.6a13.148,13.148,0,0,1,.858-4.684L69.4,81.571H63.815A13.132,13.132,0,0,1,62.388,75.6Zm19.417-5.97h5.582a13.2,13.2,0,0,1,.569,10.653Zm4.022-2.388H73.5l2.778-4.838A13.2,13.2,0,0,1,85.827,67.243ZM73.436,62.566l-6.11,10.642L64.54,68.382A13.239,13.239,0,0,1,73.436,62.566ZM65.375,83.959H77.7L74.92,88.8A13.2,13.2,0,0,1,65.375,83.959Zm12.391,4.677,6.11-10.642,2.786,4.826A13.238,13.238,0,0,1,77.766,88.636Z" transform="translate(-55.261 -55.261)" stroke="#fff" stroke-width="0.8"/>
+                          <path id="패스_2357" data-name="패스 2357" d="M214.554,211a3.554,3.554,0,1,0,3.554,3.554A3.558,3.558,0,0,0,214.554,211Zm0,4.739a1.185,1.185,0,1,1,1.185-1.185A1.186,1.186,0,0,1,214.554,215.739Z" transform="translate(-194.214 -194.214)" stroke="#fff" stroke-width="0.8"/>
+                        </g>
+                      </svg>                      
+                   <p class="cell">주변기기</p>
+                </a>
+            </div>
+            <div class="content cell">
+                <a href="#">
+                    <svg class="cell" xmlns="http://www.w3.org/2000/svg" width="43.219" height="43.764" viewBox="0 0 43.219 43.764">
+                        <g id="gears_1_" data-name="gears (1)" opacity="0.454">
+                          <path id="패스_2363" data-name="패스 2363" d="M18.462,182.786H12.308a.855.855,0,0,1-.854-.855v-1.816a13.234,13.234,0,0,1-2.278-.945l-1.285,1.286a.856.856,0,0,1-1.209,0L2.331,176.1a.854.854,0,0,1,0-1.209l1.285-1.285a13.259,13.259,0,0,1-.945-2.277H.855A.855.855,0,0,1,0,170.478v-6.154a.855.855,0,0,1,.855-.855H2.671a13.261,13.261,0,0,1,.945-2.278l-1.285-1.285a.854.854,0,0,1,0-1.209l4.351-4.352a.855.855,0,0,1,1.209,0l1.285,1.285a13.225,13.225,0,0,1,2.278-.945V152.87a.855.855,0,0,1,.854-.855h6.154a.855.855,0,0,1,.855.855v1.816a13.259,13.259,0,0,1,2.277.945l1.286-1.286a.855.855,0,0,1,1.209,0L28.44,158.7a.854.854,0,0,1,0,1.209l-1.286,1.286a13.205,13.205,0,0,1,.945,2.277h1.817a.855.855,0,0,1,.854.855v6.154a.855.855,0,0,1-.854.854H28.1a13.209,13.209,0,0,1-.945,2.278L28.44,174.9a.855.855,0,0,1,0,1.209l-4.352,4.351a.854.854,0,0,1-1.209,0l-1.286-1.285a13.257,13.257,0,0,1-2.277.945v1.816A.855.855,0,0,1,18.462,182.786Zm-5.3-1.71h4.445v-1.609a.854.854,0,0,1,.644-.828,11.519,11.519,0,0,0,3.052-1.266.854.854,0,0,1,1.041.13l1.139,1.139,3.143-3.143-1.139-1.139a.855.855,0,0,1-.13-1.041,11.511,11.511,0,0,0,1.266-3.052.855.855,0,0,1,.828-.644h1.609v-4.444H27.452a.855.855,0,0,1-.828-.644,11.522,11.522,0,0,0-1.266-3.052.855.855,0,0,1,.13-1.041l1.139-1.139-3.143-3.143L22.345,157.3a.855.855,0,0,1-1.041.13,11.514,11.514,0,0,0-3.052-1.266.855.855,0,0,1-.644-.828v-1.609H13.163v1.609a.855.855,0,0,1-.644.828,11.514,11.514,0,0,0-3.052,1.266.855.855,0,0,1-1.041-.13l-1.139-1.139L4.144,159.3l1.139,1.139a.855.855,0,0,1,.13,1.041,11.523,11.523,0,0,0-1.266,3.052.855.855,0,0,1-.828.644H1.71v4.445H3.318a.854.854,0,0,1,.828.644,11.528,11.528,0,0,0,1.266,3.052.855.855,0,0,1-.13,1.041L4.144,175.5l3.143,3.143L8.425,177.5a.855.855,0,0,1,1.041-.13,11.5,11.5,0,0,0,3.052,1.266.855.855,0,0,1,.644.828v1.609Zm0,0" transform="translate(0 -139.022)"/>
+                          <path id="패스_2364" data-name="패스 2364" d="M97.689,264.4a7.694,7.694,0,0,1-3.662-14.46.855.855,0,1,1,.815,1.5,5.983,5.983,0,1,0,5.4-.147.855.855,0,0,1,.732-1.545A7.694,7.694,0,0,1,97.689,264.4Zm0,0" transform="translate(-82.303 -228.326)"/>
+                          <path id="패스_2365" data-name="패스 2365" d="M170.858,243.721h-.011a.855.855,0,0,1,0-1.71h.011a.855.855,0,0,1,0,1.71Zm0,0" transform="translate(-155.462 -221.325)"/>
+                          <path id="패스_2366" data-name="패스 2366" d="M301.161,18.121h-5.129a.855.855,0,0,1-.854-.855V15.792a7.472,7.472,0,0,1-.7-.406l-1.277.737a.854.854,0,0,1-1.167-.313l-2.564-4.441a.854.854,0,0,1,.313-1.167l1.277-.737c-.008-.137-.011-.272-.011-.4s0-.268.011-.4l-1.277-.737a.854.854,0,0,1-.313-1.167l2.564-4.441A.854.854,0,0,1,293.2,2l1.277.737a7.546,7.546,0,0,1,.7-.406V.855A.855.855,0,0,1,296.033,0h5.129a.855.855,0,0,1,.855.855V2.328a7.521,7.521,0,0,1,.7.406L303.994,2a.855.855,0,0,1,1.168.313l2.564,4.441a.855.855,0,0,1-.313,1.168l-1.277.737c.008.137.012.272.012.4s0,.268-.012.4l1.277.737a.855.855,0,0,1,.313,1.168l-2.564,4.441a.855.855,0,0,1-1.168.313l-1.277-.737a7.641,7.641,0,0,1-.7.406v1.473A.855.855,0,0,1,301.161,18.121Zm-4.274-1.71h3.419V15.246a.854.854,0,0,1,.527-.789,5.846,5.846,0,0,0,1.316-.762.855.855,0,0,1,.948-.062l1.011.583,1.71-2.961-1.011-.583a.855.855,0,0,1-.42-.85,5.693,5.693,0,0,0,0-1.522.855.855,0,0,1,.42-.85l1.011-.584L304.108,3.9l-1.011.583a.855.855,0,0,1-.948-.062,5.847,5.847,0,0,0-1.316-.762.854.854,0,0,1-.527-.789V1.71h-3.419V2.875a.855.855,0,0,1-.527.789,5.84,5.84,0,0,0-1.316.762.855.855,0,0,1-.948.062L293.086,3.9l-1.71,2.961,1.011.584a.854.854,0,0,1,.42.85,5.694,5.694,0,0,0,0,1.522.854.854,0,0,1-.42.85l-1.011.584,1.71,2.961,1.011-.584a.855.855,0,0,1,.948.062,5.847,5.847,0,0,0,1.316.762.854.854,0,0,1,.527.789Zm0,0" transform="translate(-264.621)"/>
+                          <path id="패스_2367" data-name="패스 2367" d="M355.424,67.86a3.932,3.932,0,1,1,3.932-3.932A3.936,3.936,0,0,1,355.424,67.86Zm0-6.154a2.222,2.222,0,1,0,2.222,2.222A2.225,2.225,0,0,0,355.424,61.706Zm0,0" transform="translate(-321.447 -54.868)"/>
+                        </g>
+                      </svg>                      
+                   <p class="cell">악세서리</p>
+                </a>
+            </div>
+            <div class="content cell">
+                <a href="#">
+                    <svg class="cell" xmlns="http://www.w3.org/2000/svg" width="41.577" height="41.506" viewBox="0 0 41.577 41.506">
+                        <g id="webcam" transform="translate(0.447 0.4)" opacity="0.454">
+                          <g id="그룹_505" data-name="그룹 505" transform="translate(9.931 8.838)">
+                            <g id="그룹_504" data-name="그룹 504">
+                              <path id="패스_2358" data-name="패스 2358" d="M146.41,121a10.41,10.41,0,1,0,10.41,10.41A10.422,10.422,0,0,0,146.41,121Zm0,18.218a7.808,7.808,0,1,1,7.808-7.808A7.816,7.816,0,0,1,146.41,139.22Z" transform="translate(-136 -121.002)" stroke="#fff" stroke-width="0.8"/>
+                            </g>
+                          </g>
+                          <g id="그룹_507" data-name="그룹 507" transform="translate(15.136 13.98)">
+                            <g id="그룹_506" data-name="그룹 506">
+                              <path id="패스_2359" data-name="패스 2359" d="M201.206,181a5.205,5.205,0,1,0,5.205,5.205A5.211,5.211,0,0,0,201.206,181Zm0,7.808a2.6,2.6,0,1,1,2.6-2.6A2.605,2.605,0,0,1,201.206,188.81Z" transform="translate(-196.001 -181.002)" stroke="#fff" stroke-width="0.8"/>
+                            </g>
+                          </g>
+                          <g id="그룹_509" data-name="그룹 509" transform="translate(0)">
+                            <g id="그룹_508" data-name="그룹 508">
+                              <path id="패스_2360" data-name="패스 2360" d="M40.322,35.513c-1.3-2.556-4.4-4.844-8.648-6.436a16.688,16.688,0,1,0-22.606,0C4.823,30.668,1.724,32.957.42,35.512a3.5,3.5,0,0,0,.333,3.74,3.616,3.616,0,0,0,3.629,1.359,83.239,83.239,0,0,1,31.977,0,3.616,3.616,0,0,0,3.629-1.359A3.5,3.5,0,0,0,40.322,35.513ZM6.067,16.768a14.3,14.3,0,1,1,14.3,14.384A14.36,14.36,0,0,1,6.067,16.768ZM38.091,37.81a1.234,1.234,0,0,1-1.256.465,85.711,85.711,0,0,0-32.927,0,1.234,1.234,0,0,1-1.256-.465A1.116,1.116,0,0,1,2.544,36.6c1.131-2.217,4.461-4.4,8.755-5.767a16.555,16.555,0,0,0,18.144,0c4.294,1.365,7.624,3.55,8.755,5.768A1.116,1.116,0,0,1,38.091,37.81Z" transform="translate(-0.03)" stroke="#fff" stroke-width="0.8"/>
+                            </g>
+                          </g>
+                          <g id="그룹_511" data-name="그룹 511" transform="translate(19.04 5.292)">
+                            <g id="그룹_510" data-name="그룹 510">
+                              <circle id="타원_17" data-name="타원 17" cx="1.301" cy="1.301" r="1.301" stroke="#fff" stroke-width="0.8"/>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>                      
+                   <p class="cell">홈카메라 / AIO</p>
+                </a>
+            </div>
+            <div class="content cell">
+                <a href="#">
+                    <svg class="cell" xmlns="http://www.w3.org/2000/svg" width="38.5" height="38.5" viewBox="0 0 38.5 38.5">
+                        <g id="cctv_1_" data-name="cctv (1)" transform="translate(0.25 0.25)">
+                          <g id="그룹_2157" data-name="그룹 2157">
+                            <path id="패스_6086" data-name="패스 6086" d="M38,7.867V1.113A1.113,1.113,0,0,0,36.887,0H1.113A1.113,1.113,0,0,0,0,1.113V7.867a1.186,1.186,0,0,0,.134.53h0L2.3,12.591V21.3a16.7,16.7,0,0,0,33.4,0v-8.71L37.866,8.4h0A1.169,1.169,0,0,0,38,7.867Zm-4.092,3.34H4.092L2.942,8.98H35.058ZM2.227,2.227H35.773V6.754H2.227ZM12.32,34.137v-9.57a6.68,6.68,0,0,1,13.359,0v9.57a14.449,14.449,0,0,1-13.359,0ZM27.906,32.7V24.566a8.906,8.906,0,1,0-17.812,0V32.7A14.455,14.455,0,0,1,4.527,21.3V13.434H33.473V21.3A14.455,14.455,0,0,1,27.906,32.7Z" fill="#8a8a8a" stroke="#fff" stroke-width="0.5"/>
+                            <path id="패스_6087" data-name="패스 6087" d="M200.507,271a4.507,4.507,0,1,0,4.507,4.507A4.512,4.512,0,0,0,200.507,271Zm0,6.761a2.254,2.254,0,1,1,2.254-2.254A2.256,2.256,0,0,1,200.507,277.761Z" transform="translate(-181.507 -250.961)" fill="#8a8a8a" stroke="#fff" stroke-width="0.5"/>
+                          </g>
+                          <circle id="타원_52" data-name="타원 52" cx="1" cy="1" r="1" transform="translate(17.772 31.539)" fill="#8a8a8a" stroke="#fff" stroke-width="0.5"/>
+                        </g>
+                      </svg>                      
+                   <p class="cell">VPN</p>
+                </a>
+            </div>
+            <div class="content cell">
+                <a href="#">
+                    <svg class="cell" xmlns="http://www.w3.org/2000/svg" width="40.34" height="37.259" viewBox="0 0 40.34 37.259">
+                        <g id="bell" transform="translate(7.907)" opacity="0.443">
+                          <g id="그룹_2137" data-name="그룹 2137" transform="translate(13.803 0)">
+                            <path id="패스_6023" data-name="패스 6023" d="M15.434,6.489a.777.777,0,0,1-.776-.776V3.1a1.552,1.552,0,1,0-3.1,0V5.713a.776.776,0,1,1-1.552,0V3.1a3.1,3.1,0,0,1,6.21,0V5.713A.776.776,0,0,1,15.434,6.489Z" transform="translate(-10 0)"/>
+                          </g>
+                          <g id="그룹_2138" data-name="그룹 2138" transform="translate(11.474 31.049)">
+                            <path id="패스_6024" data-name="패스 6024" d="M13.934,26.21A5.44,5.44,0,0,1,8.5,20.776a.776.776,0,1,1,1.552,0,3.881,3.881,0,1,0,7.762,0,.776.776,0,1,1,1.552,0A5.44,5.44,0,0,1,13.934,26.21Z" transform="translate(-8.5 -20)"/>
+                          </g>
+                          <g id="그룹_2139" data-name="그룹 2139" transform="translate(1.383 4.657)">
+                            <path id="패스_6025" data-name="패스 6025" d="M30.721,30.944H4.329a2.329,2.329,0,0,1-1.514-4.1,10.793,10.793,0,0,0,3.842-8.262V13.867a10.867,10.867,0,1,1,21.735,0v4.716a10.781,10.781,0,0,0,3.83,8.251,2.329,2.329,0,0,1-1.5,4.109ZM17.525,4.552A9.324,9.324,0,0,0,8.21,13.867v4.716a12.334,12.334,0,0,1-4.38,9.437.776.776,0,0,0,.5,1.371H30.721a.776.776,0,0,0,.5-1.366,12.343,12.343,0,0,1-4.386-9.442V13.867a9.324,9.324,0,0,0-9.315-9.315Z" transform="translate(-2 -3)"/>
+                          </g>
+                          <path id="패스_6033" data-name="패스 6033" d="M6.674,44.788a.793.793,0,0,1-.564-.234,14.4,14.4,0,0,1,0-20.368.8.8,0,1,1,1.129,1.129,12.806,12.806,0,0,0,0,18.11.8.8,0,0,1-.564,1.363Z" transform="translate(-9.798 -20.233)"/>
+                          <path id="패스_6034" data-name="패스 6034" d="M10.514,42.667a.8.8,0,0,1-.564-.234,10.415,10.415,0,0,1,0-14.71.8.8,0,1,1,1.129,1.127,8.817,8.817,0,0,0,0,12.455.8.8,0,0,1-.564,1.363Z" transform="translate(-10.81 -20.941)"/>
+                          <path id="패스_6035" data-name="패스 6035" d="M14.353,40.558a.8.8,0,0,1-.564-.234,6.405,6.405,0,0,1,0-9.051A.8.8,0,1,1,14.918,32.4a4.809,4.809,0,0,0,0,6.793.8.8,0,0,1-.564,1.363Z" transform="translate(-11.82 -21.662)"/>
+                        </g>
+                      </svg>                      
+                   <p class="cell">신제품알림등록</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="section section01 con row">
+        <div class="title-box">
+            <h1>NEWS CENTER</h1>
+            <div class="btn"><a href="#"><i class="fa-light fa-plus"></i></a></div>
+        </div>
+        <div class="content content01 cell">
+            <div class="img-box w100-box" style="background-image: url(./img/section01-img01.png);"></div>
+            <div class="text-box">
+                <h5>뉴스센터</h5>
+                <h4>한화테크윈이 전망하는 2022년 영상 보안 트렌드</h4>
+                <p>2022.01.12</p>
+            </div>
+        </div>
+        <div class="content content01 cell">
+            <div class="img-box w100-box" style="background-image: url(./img/section01-img02.jpg);"></div>
+            <div class="text-box">
+                <h5>뉴스센터</h5>
+                <h4>한화테크윈, 직원 아이디어 발굴로 ‘영상 보안 솔루션’ 강화한다</h4>
+                <p>2021.11.11</p>
+            </div>
+        </div>
+        <div class="content content01 cell">
+            <div class="img-box w100-box" style="background-image: url(./img/section01-img03.jpg);"></div>
+            <div class="text-box">
+                <h5>뉴스센터</h5>
+                <h4>한화테크윈, 수출입안전관리 우수업체(AEO) 공인 인증 취득</h4>
+                <p>2021.07.27</p>
+            </div>
+        </div>
+    </div>
+    <div class="section02-wrap">
+        <div class="section section02 con">
+            <div class="title-box">
+                <h1>NEW PRODUCTS</h1>
+            </div>
+                <div class="slider-wrap03">
+                    <div class="slider">
+                        <div class="content">
+                            <div class="txt-box">
+                                <p>발열감지 열화상 카메라</p>
+                                TNM-3620TDY
+                            </div>
+                            <div class="img-box w100-box">
+                                <img src="./img/section02-slider-img01.png" alt="">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="txt-box">
+                            <p>4K 30배 IR 와이퍼 PTZ 카메라</p>
+                                XNP-9300RW
+                            </div>
+                            <div class="img-box w100-box">
+                                <img src="./img/section02-slider-img02.png" alt="">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="txt-box">
+                            <p>128채널 서버형 저장장치</p>
+                                XRP-4310DB4
+                            </div>
+                            <div class="img-box w100-box">
+                                <img src="./img/section02-slider-img03.png" alt="">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="txt-box">
+                                <p>2M IR 반달돔 카메라</p>
+                                QNV-6082R1
+                            </div>
+                            <div class="img-box w100-box">
+                                <img src="./img/section02-slider-img04.png" alt="">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="txt-box">
+                                <p>4채널 PoE 저장장치</p>
+                                QRN-430S
+                            </div>
+                            <div class="img-box w100-box">
+                                <img src="./img/section02-slider-img05.png" alt="">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="txt-box">
+                                <p>2M H.265 32배 IR PTZ 카메라</p>
+                                KNP-2320PHA
+                            </div>
+                            <div class="img-box w100-box">
+                                <img src="./img/section02-slider-img06.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prev-btn btn"><i class="fa-solid fa-arrow-left"></i></div>
+                    <div class="next-btn btn"><i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+        </div>
+    </div>
+    <div class="section section03 con row">
+        <div class="title-box">
+            <h1>CASE STUDY</h1>
+        </div>
+        <div class="list-box">
+            <ul class="row">
+                <li class="cell">
+                    <img src="./img/ico-case1.svg" alt="전체">
+                    <p>전체</p>  
+                </li>
+                <li class="cell">
+                    <img src="./img/ico-case2.svg" alt="리테일">
+                    <p>리테일</p>  
+                </li>
+                <li class="cell">
+                    <img src="./img/ico-case3.svg" alt="병원">
+                    <p>병원</p>  
+                </li>
+                <li class="cell">
+                    <img src="./img/ico-case4.svg" alt="스마트 시티">
+                    <p>스마트 시티</p>  
+                </li>
+                <li class="cell">
+                    <img src="./img/ico-case5.svg" alt="은행">
+                    <p>은행</p>  
+                </li>
+                <li class="cell">
+                    <img src="./img/ico-case6.svg" alt="교통">
+                    <p>교통</p>  
+                </li>
+                <li class="cell">
+                    <img src="./img/ico-case7.svg" alt="교육">
+                    <p>교육</p>  
+                </li>
+                <li class="cell">
+                    <img src="./img/ico-case8.svg" alt="상업 빌딩">
+                    <p>상업 빌딩</p>  
+                </li>
+                <li class="cell">
+                    <img src="./img/ico-case10.svg" alt="호텔 / 주거">
+                    <p>호텔 / 주거</p>  
+                </li>
+                <li class="cell">
+                    <img src="./img/ico-case9.svg" alt="기타">
+                    <p>기타</p>  
+                </li>
+            </ul>
+        </div>
+        <div class="content-box">
+            <div class="content cell">
+                <a href="#">
+                    <div class="img-box w100-box">
+                        <div class="img"  style="background-image: url(./img/section03-content-01-01.jpg);">></div>
+                    </div>
+                    <div class="overlay-box">
+                        <div class="title-box"><P>호텔 / 주거</P></div>
+                        <div class="txt-box">
+                            디에이치 자이 아파트 -<br>
+                            대한민국
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="content cell">
+                <a href="#">
+                    <div class="img-box w100-box">
+                        <div class="img"  style="background-image: url(./img/section03-content-01-02.jpg);">></div>
+                    </div>
+                    <div class="overlay-box">
+                        <div class="title-box"><P>호텔 / 주거</P></div>
+                        <div class="txt-box">
+                            반포 자이 아파트 -<br>
+                            대한민국
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="content cell">
+                <a href="#">
+                    <div class="img-box w100-box">
+                        <div class="img"  style="background-image: url(./img/section03-content-01-03.jpg);">></div>
+                    </div>
+                    <div class="overlay-box">
+                        <div class="title-box"><P>라테일</P></div>
+                        <div class="txt-box">
+                            스토어 세이프 피플 -<br>
+                            오스트리아
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="content cell">
+                <a href="#">
+                    <div class="img-box w100-box">
+                        <div class="img"  style="background-image: url(./img/section03-content-01-04.jpg);">></div>
+                    </div>
+                    <div class="overlay-box">
+                        <div class="title-box"><P>기타</P></div>
+                        <div class="txt-box">
+                            원자력 발전소 헤이샴 2호기 -<br>
+                            영국
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <a href="#">
+            <div class="btn">
+                프로젝트 사례 바로 가기&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </a>
+    </div>
+    <div class="footer-wrap w100-box">
+        <div class="footer-nav con row">
+            <ul>
+                <li class="cell"><a href="#">자료 센터</a></li>
+                <li class="cell"><a href="#">DDNS</a></li>
+                <li class="cell"><a href="#">STEP</a></li>
+                <li class="cell"><a href="#">구매 문의</a></li>
+            </ul>
+        </div>
+        <div class="footer-info-wrap">
+            <div class="footer-info con row">
+                <div class="logo-box cell">
+                    <svg id="레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 195.85 56.69"><defs><style>.cls-1{fill:#fbb584;}.cls-2{fill:#f89b6c;}.cls-3{fill:#f37321;}.cls-4{fill:#fff;}</style></defs><path class="cls-1" d="M23.08,29.06c-.81-7.37,6.92-13.28,17.26-13.2S59.72,22,60.53,29.34s-6.91,13.28-17.25,13.2-19.39-6.11-20.2-13.48m39.37,2.29c-.93-9.14-11.34-16.63-23.24-16.73S18.42,21.86,19.35,31,30.69,47.62,42.59,47.72s20.8-7.23,19.86-16.37" transform="translate(0 0)"/><path class="cls-2" d="M44.48,47.9C38.62,54,29.21,54.54,23.47,49s-5.65-14.92.22-21,15.27-6.64,21-1.14,5.65,14.92-.22,21M22.77,27.8c-6.82,7.12-6.93,18.07-.25,24.46s17.61,5.8,24.42-1.32,6.93-18.07.25-24.46-17.61-5.8-24.42,1.32" transform="translate(0 0)"/><path class="cls-3" d="M23.39,4.88C35.58.31,47.64,4.93,50.32,15.2s-5,22.3-17.23,26.87S8.84,42,6.17,31.75s5-22.3,17.22-26.87M12.07,8.8C-.58,18.82-3.8,33.33,4.87,41.21s26,6.16,38.62-3.86S59.36,12.83,50.68,5s-26-6.16-38.61,3.85" transform="translate(0 0)"/><path class="cls-4" d="M85.16,22.19H71V19.92h14.2Zm-7.1,10a6.78,6.78,0,0,1-4.38-1.36,4,4,0,0,1,0-6.5,7.73,7.73,0,0,1,8.76,0,4,4,0,0,1,0,6.5A6.82,6.82,0,0,1,78.06,32.17Zm1.08,5.22H91.42v2.43h-13q-4.22,0-4.22-3.93V33.36h3.17v2.16A1.63,1.63,0,0,0,79.14,37.39ZM74.41,16.8H81.7v2.3H74.41ZM78.06,30a3.35,3.35,0,0,0,2.12-.69,2.07,2.07,0,0,0,0-3.4,3.62,3.62,0,0,0-4.25,0,2.08,2.08,0,0,0,0,3.4A3.36,3.36,0,0,0,78.06,30ZM91.31,23h3.27v2.48H91.31v8H88.17V17.2h3.14Z" transform="translate(0 0)"/><path class="cls-4" d="M102.82,32a6.16,6.16,0,0,1-2.88-1.27,4,4,0,0,1,.06-6.46,7.73,7.73,0,0,1,8.76,0,4,4,0,0,1,0,6.46A6.3,6.3,0,0,1,106,32v2.4h3.51c3.17,0,4.75-1.23,4.75-3.67V17.2h3.14v7.6h3.28v2.51h-3.28V39.88h-3.14V35.62A6.15,6.15,0,0,1,110,36.89H96.72V34.44h6.1Zm8.61-9.85H97.22V19.92h14.21ZM100.74,16.8H108v2.3h-7.28ZM104.38,30a3.33,3.33,0,0,0,2.12-.69,2.07,2.07,0,0,0,0-3.4,3.62,3.62,0,0,0-4.25,0,2.08,2.08,0,0,0,0,3.4A3.36,3.36,0,0,0,104.38,30Z" transform="translate(0 0)"/><path class="cls-4" d="M134.32,32.67v2.45h-6.9q-4.07,0-4.06-4.17V17.57h9.82V20H126.4V24.8h5.7v2.43h-5.7v3.54c0,1.27.55,1.9,1.66,1.9Zm2.21-15.47h3V39.88h-3V27.34h-2.85V24.8h2.85Zm4.91,0h3.09V39.88h-3.09Z" transform="translate(0 0)"/><path class="cls-4" d="M171.3,37.53H148.15V35H171.3ZM150.45,25.59h14.81v-3.4a1.72,1.72,0,0,0-2-1.93H150.45V17.81h14c2.65,0,4,1.32,4,4V32.7h-3.16V28H150.45Z" transform="translate(0 0)"/><path class="cls-4" d="M175.71,23a5.22,5.22,0,0,1,2-4.23,8.17,8.17,0,0,1,9.79,0,5.22,5.22,0,0,1,2,4.23,5.13,5.13,0,0,1-1.61,3.88h3.38v2.43h-8v3.41h-3.14V29.34h-5.73V26.91h3A5.13,5.13,0,0,1,175.71,23Zm7.1,14.36h13v2.43H181.94c-2.82,0-4.22-1.4-4.22-4.2v-2h3.14v1.79A1.74,1.74,0,0,0,182.81,37.39Zm-3.9-14.3A3.28,3.28,0,0,0,180,25.62a3.93,3.93,0,0,0,5.19,0,3.26,3.26,0,0,0,1.08-2.53,3.37,3.37,0,0,0-1.08-2.59,3.66,3.66,0,0,0-2.59-1,3.73,3.73,0,0,0-2.6,1A3.37,3.37,0,0,0,178.91,23.09Zm16.81-5.89V34.86h-3.14V17.2Z" transform="translate(0 0)"/></svg>
+                    <p>경기도 성남시 분당구 판교로 319번길 6 (삼평동)<br>
+                    CCTV A/S 및 기술문의 1588.5722</p>
+                </div>
+                <div class="info cell row">
+                    <ul class="cell">
+                        <a href="#">회사소개</a>
+                        <li><a href="#">기업소개</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">지속가능경영</a></li>
+                        <li><a href="#">인재채용</a></li>
+                        <li><a href="#">전자공고</a></li>
+                    </ul>
+                    <ul class="cell">
+                        <a href="#">뉴스센터</a>
+                        <li><a href="#">뉴스센터</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">프로모션</a></li>
+                        <li><a href="#">전시 이벤트</a></li>
+                    </ul>
+                    <ul class="cell">
+                        <li><a href="#">회사방침</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                        <li><a href="#">저작권침해행위거부</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info-letter cell-r row">
+                    <p class="cell">NEWS LETTER</p>
+                    <div class="btn cell-r">신청하기</div>
+                    <div class="icon-box cell">
+                        <a href="#"><i class="fa-solid fa-comment"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="footer-copy-right con row">
+        <p class="cell">&#169; 2021 Hanwha Techwin Co., Ltd. All rights Reserved.</p>
+        <div class="site-btn cell-r row">
+            <p class="">FAMILY SITES</p>
+            <i class="fa-thin fa-plus"></i>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

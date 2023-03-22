@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+a {text-decoration: none; color: #555;}
+a:hover {color: #000;}
+ul,ol,li {list-style: none;}
+.bline {position: absolute; left: -9999px; font-size: 0;}
+body {overflow-x: hidden; font-family: 'Nanum Gothic', sans-serif;}
+
+.mar_tb {margin: 35px 0;}
+.mar_t15 {margin-top: 15px;}
+.mar_t20 {margin-top: 20px;}
+.mar_t25 {margin-top: 25px;}
+.mar_t30 {margin-top: 30px;}
+.mar_t35 {margin-top: 35px;}
+.mar_t40 {margin-top: 40px;}
+.mar_t45 {margin-top: 45px;}
+
+.mar_b15 {margin-bottom: 15px;}
+.mar_b20 {margin-bottom: 20px;}
+.mar_b25 {margin-bottom: 25px;}
+.mar_b30 {margin-bottom: 30px;}
+.mar_b35 {margin-bottom: 35px;}
+.mar_b40 {margin-bottom: 40px;}
+.mar_b45 {margin-bottom: 45px;}
+
+
+/* 헤더 영역 */
+header {background: #fff; border-bottom: 1px solid #e1e1e1;}
+
+#top {width: 1032px; height: 100px; margin: 0 auto; border: 0px solid #000; position: relative;}
+
+#top h1 {padding: 30px 0 0 0px; float: left;}
+#top h1 a {width: 210px; height: 42px; background: url(../images/img_logo.png)no-repeat 0 0; display: block}
+#top h1 span {font-size: 0; position: absolute; left: -9999px;}
+
+/* 헤더영역 snb */
+#top .snb {position: absolute; right: 0; top: 8px;}
+#top .snb ul li {float: left; padding-left: 15px; font-size: 12px;}
+
+/* 헤더영역 gnb */
+#top .gnb {position: absolute; right: 40px; margin-left: 45px; margin-top: 45px;}
+#top .gnb ul li {float: left; padding-left: 35px; }
+#top .gnb ul li a {color: #000; font-weight: bold;}
+/*#top .gnb ul li a:hover {border-bottom: #134696 solid 2px;}*/
+
+/* 하단영역 */
+#foot {margin-top: 15px;}
+#foot .f_banner {background: #fefefe;border: 1px solid #d1d1d1;}
+#foot .f_banner .f_banner_box {width: 1032px; line-height: 17px; margin: 0 auto; font-size: 13px; overflow: hidden; color: #555;}
+#foot .f_banner .f_banner_box .l_box {float: left;}
+#foot .f_banner .f_banner_box .l_box li {display: inline-block; }
+
+#foot .f_banner .f_banner_box .l_box li span {font-weight: bold; float: left; margin-top: 12px;}
+#foot .f_banner .f_banner_box .l_box li a {background: url(../images/foot_banner_0308_02_2.jpg)no-repeat; width: 132px; height: 32px; display: block; float: left;margin: 5px 5px 5px 15px;}
+
+#foot .f_banner .f_banner_box .r_box {float: right; margin-top: 15px;}
+#foot .f_banner .f_banner_box .r_box li {display: inline-block; margin-left: 5px;}
+#foot .f_banner .f_banner_box .r_box li a {padding: 3px 18px; background: #fefefe; border: 1px solid #e7e7e7;}
+
+#foot .f_add {width: 1032px; height: 100px; margin: 0 auto; overflow: hidden; position: relative;}
+
+#foot .f_add h2 {margin: 15px 0 0 0; float: left;}
+#foot .f_add ul {overflow: hidden; float: left; margin: 15px 0 0 35px;}
+#foot .f_add ul li {float: left; padding-left: 15px;}
+#foot .f_add ul li a {font-size: 12px;}
+#foot .f_add ul li:nth-child(4) a {color: #003399; font-weight: bold;}
+
+#foot .f_add address {color: #555; font-size: 12px; font-style: normal; float: left; margin: 10px 0 0 51px;}
+#foot .f_add small {color: #555; float: left; margin-left: 51px;}
+#foot .f_add small span {color: #811515;}
+
+#foot .f_add .m_link {position: absolute; top:15px; right: 0;}
+#foot .f_add .m_link a {width: 136px; height: 58px; display: block; background: url(../images/foot_img_callc.jpg)no-repeat 0 bottom; float: left; margin-left: 10px;}
+

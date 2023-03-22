@@ -1,0 +1,79 @@
+/* 메인배너 */
+.mv_b {width: 100%; background: #ebf7fb;}
+.mv {width: 1032px; height: 270px; margin: 0 auto; position: relative;}
+.mv_img {width: 600px; height: 100%; background: url(../images/img_main.png)no-repeat 0 0; display: block; float: left;}
+.mv_sub {width: 420px; height: 170px; float: left; border: 1px solid #e1e1e1; margin: 0 0 0 10px; border-radius: 5px; background: #fff;}
+.mv_Q {width: 422px; height: 90px; float: left; padding-top: 5px; margin: 10px 0 0 10px; border: 1px solid #e1e1e1; border-radius: 10px; background: #fff;}
+.mv_Q h4 {font-size: 13px; font-weight: bold; padding-left: 10px;}
+.mv_Q ul {overflow: hidden;}
+.mv_Q ul li {float: left; margin: 5px 5px 0 5px; padding: 5px;}
+.mv_Q ul li a {}
+.mv_Q ul li span {text-align: center; font-size: 12px; width: 60px; height: 50px; font-weight: bold;}
+.mv_Q ul li:nth-child(1) span {background: url(../images/bg_quick01.png)no-repeat center 0; display: block; padding-top: 40px;}
+.mv_Q ul li:nth-child(2) span {background: url(../images/bg_quick02.png)no-repeat center 0; display: block; padding-top: 40px;}
+.mv_Q ul li:nth-child(3) span {background: url(../images/bg_quick03.png)no-repeat center 0; display: block; padding-top: 40px; width: 80px;}
+.mv_Q ul li:nth-child(4) span {background: url(../images/bg_quick04.png)no-repeat center 0; display: block; padding-top: 40px;}
+.mv_Q ul li:nth-child(5) span {background: url(../images/bg_quick05.png)no-repeat center 0; display: block; padding-top: 40px; margin-right: 0;}
+
+/* 콘텐츠영역 */
+#con {width: 1032px; margin: 0 auto; position: relative; border: 0px solid #000; padding-top: 25px; overflow: hidden;}
+#con p {font-size: 12px;}
+#con h2 {margin-bottom: 10px; font-size: 16px; border-bottom: 1px solid #dcdcdc;}
+#con h4 {font-size: 13px; margin-bottom: 7px;}
+#con h2 span {padding: 5px 10px; background: #001245; color: #fff; position: relative; top: -4px;}
+#con h2 ul {float: right;}
+#con h2 ul li {float: left;}
+#con h2 ul li:nth-child(1) {background: url(../images/main_common_prev.gif)no-repeat;width: 18px; height: 18px; display: block;}
+#con h2 ul li:nth-child(2) {background: url(../images/main_common_next.gif)no-repeat;width: 18px; height: 18px; display: block; margin-right: 3px;}
+#con h2 ul li:nth-child(3) {background: url(../images/main_common_stop.gif)no-repeat;width: 19px; height: 18px; display: block;}
+
+#con .con1,.con2 {width: 40%; height: 100%; float: left; padding: 10px;}
+#con .con3 {width: 20%; height: 100%; float: left; padding: 10px;}
+#con .con4 {width: 100%; height: 186px; float: left; background: url(../images/banner._1.png)no-repeat;}
+#con .con1 {padding-left: 0;}
+#con .con3 {padding-right: 0;}
+#con .con1 .con_01,.con_02,.con_03,.con_04 {border: 0px solid #000; margin-bottom: 10px;}
+
+.text_list01 {margin: 15px 0 0 5px; position: relative;}
+.text_list01 li {font-size: 14px; white-space: nowrap; width: 250px; overflow: hidden; text-overflow: ellipsis; line-height: 30px;}
+.text_list01 li::before {content: "•"; ; color: #aaa; display: inline-block; position: relative; top: 1px; margin-right: 1px;}
+.text_list01 li span {position: absolute; right: 6px;}
+h2 a {color: #fff; padding: 2px 5px; text-align: center; background: #aaa; float: right; position: relative; top: -3px;}
+
+/*공지사항 & 입찰안내 & 정보목록 */
+#con .con1 .con1_01,.con1_02,.con1_03 {margin-bottom: 25px;}
+
+
+/* 보도/홍보 & 인사/채용 & 국민 참여*/
+#con .con2 .con2_01,.con2_02,.con2_03 {margin-bottom: 25px;}
+#con .con2_03 {position: relative;}
+#con .con2_03_a {width: 50%; float: left;}
+#con .con2_03_a ul li {width: 200px;}
+#con .con2_03_b {width: 195px; float: left; position: absolute; right: 0; padding: 10px; border: 3px solid #e1e1e1; margin-top: 18px;}
+
+
+/* 온라인신청 */
+#con .con3 .con3_01 {border: 1px solid #dcdcdc; margin-top: -10px;}
+#con .con3 .con3_01 h4 {font-size: 16px; background: #419fe3;padding: 5px; text-align: center; font-weight: bold; color: #fff;}
+#con .con3 .con3_01 h4 span {font-size: 25px; color: #f16522;}
+
+#con .con3 .con3_01 ul {overflow: hidden;}
+#con .con3 .con3_01 ul li {float:left; margin: 2px 0px 20px 2px; padding: 5px;}
+
+#con .con3 .con3_01 ul li a {}
+#con .con3 .con3_01 ul li span {text-align: center; font-size: 12px; width: 85px; height: 50px; }
+#con .con3 .con3_01 ul li:nth-child(1) span {background: url(../images/bg_online01.png)no-repeat center 0; display: block; letter-spacing: -1px; padding-top: 50px; }
+#con .con3 .con3_01 ul li:nth-child(2) span {background: url(../images/bg_online02.png)no-repeat center 0; display: block; letter-spacing: -1px; padding-top: 50px; }
+#con .con3 .con3_01 ul li:nth-child(3) span {background: url(../images/bg_online03.png)no-repeat center 0; display: block; letter-spacing: -1px; padding-top: 50px; }
+#con .con3 .con3_01 ul li:nth-child(4) span {background: url(../images/bg_online04.png)no-repeat center 0; display: block; letter-spacing: -1px; padding-top: 50px; }
+
+/* 문자 고지 할인 신청 */
+#con .con3 .con3_02 {font-size: 14px; width: 100%;}
+
+
+/* 대전지방국토청 소속 지방 국토관리사무소 */
+#con .con3 .con03_03 {display: block; border: 1px solid #e1e1e1; padding-bottom: 15px;}
+/*background: url(../images/bg_con1_04.png)no-repeat 0 bottom;*/
+#con .con3 .con03_03 .con03_03_h2 {text-align: center; border-bottom: 0;margin: 0 0 15px 0; font-size: 16px; color: #333; background: #419fe3; color: #fff; padding: 8px;}
+#con .con3 .con03_03 ul li {text-align: center; font-size: 14px; line-height: 30px;}
+#con .con3 .con03_03 ul li::before{content: "";  background: url(../images/con3_list.png)no-repeat; display: inline-block; width: 7px; height: 7px; margin-right: 3px;}

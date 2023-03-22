@@ -1,0 +1,92 @@
+.s_content {margin-top: 25px;}
+.s_content h4 {margin-bottom: 10px; color: #333;}
+.s_content h5 {font-size: 16px; margin-bottom: 10px;}
+.s_content h6 {font-size: 13px; font-weight: bold;}
+.s_content h6::before{content: ""; width: 4px; height: 4px; background: #aaa; display: inline-block; position: relative; top: -2px;}
+
+/* 검색바 */
+.search_box {text-align: center;}
+.search_box select {border: 1px solid #d1d1d1;}
+.search_box .input {border: 1px solid #d1d1d1; height: 25px; padding: 0 10px;}
+.search_box .submit {background: #808080; border: 1px solid #666; color: #fff; height: 25px; padding: 0 5px; font-size: 12px; font-weight: bold; border-radius: 3px;}
+
+.s_content p {color: #333; margin: 10px 0; font-size: 13px;}
+.s_titbox {margin-top: 25px; background: #f9f9f9; border: 1px solid #d1d1d1; border-radius: 3px; padding: 15px;}
+.con_list01 {margin-left: 4px; }
+.con_list01 li {line-height: 20px; font-size: 13px;}
+.con_list01 li::before{content: ""; width: 4px; height: 4px; background: #aaa; display: inline-block; position: relative; top: -2px;}
+
+.con_list02 {margin-left: 8px; }
+.con_list02 li {line-height: 20px; font-size: 13px;}
+.con_list02 li::before{content: "-";}
+
+/* 테이블 */
+
+/* 오시는길 */
+caption {font-size: 0; position: absolute; left: -9999px; }
+table.t01 {width: 100%; border: 1px solid #d1d1d1; border-collapse: collapse; font-size: 13px; line-height: 20px;}
+table.t01 th {border: 1px solid #d1d1d1; background: #f0f0f0;}
+table.t01 td {border: 1px solid #d1d1d1; padding: 6px 10px;}
+table.t01 td p {text-align: justify;}
+
+/* 공지사항 */
+table.t02 {width: 100%; border: 1px solid #d1d1d1; border-collapse: collapse; font-size: 13px; border-top: 3px solid #ccc; line-height: 25px;}
+table.t02 th {border: 1px solid #d1d1d1; background: #f0f0f0; padding: 4px; }
+table.t02 td {border: 1px solid #d1d1d1; padding: 4px; text-align: center;}
+table.t02 td:nth-child(2) {text-align: left;}
+
+/* 사전정보공개 */
+table.t03 {width: 100%; border: 1px solid #d1d1d1; border-collapse: collapse; font-size: 13px; border-top: 3px solid #ccc; line-height: 25px;}
+table.t03 th {border: 1px solid #d1d1d1; background: #f0f0f0; padding: 4px; }
+table.t03 td {border: 1px solid #d1d1d1; padding: 4px; text-align: center;}
+table.t03 td:nth-child(3) {text-align: left;}
+
+.over_c {text-overflow: clip;}
+.over_e {text-overflow: ellipsis;}            
+.over {white-space: nowrap; width: 300px; overflow: hidden;}
+
+
+.t_total {overflow: hidden;}
+.t_total li{float: left; font-size: 12px; font-weight: bold; margin: 5px 0; padding: 3px;}
+.t_total li::before {content: "|"; font-size: 5px; margin-right: 4px; color: #333;}
+.t_total li:first-child::before {content: ""; margin-left: 0; padding-left: 0;}
+
+.num_page {height: 25px; margin: 30px 0; display: inline-flex; position: relative; left: 50%; transform: translateX(-50%);}
+
+.num_page .page_first {width: 24px; height: 23px; background: url(../images/btnPageFirst.gif)no-repeat; display: inline-block; font-size: 0;}
+.num_page .page_prev {width: 24px; height: 23px; background: url(../images/btnPagePrev.gif)no-repeat; display: inline-block; font-size: 0; margin-left: -6px;}
+
+.num_page span a {display: inline-block; padding: 1px 6px;font-weight: bold; font-size: 13px;}
+.num_page span a:hover {background: #333; color: #fff;}
+
+.num_page .page_next {width: 24px; height: 23px; background: url(../images/btnPageNext.gif)no-repeat; display: inline-block; font-size: 0;}
+.num_page .page_last {width: 24px; height: 23px; background: url(../images/btnPageLast.gif)no-repeat; display: inline-block; font-size: 0; margin-left: -6px;}
+
+/* 서브페이지_01 */
+.s_titbox_01 {float: left; width: 100%;}
+.s_titbox_01_a {width: 140px; padding: 5px; text-align: center; background: #fefefe; border: 1px solid #e1e1e1; border-radius: 5px; font-size: 14px; display: block; position: relative; left: 50%; transform: translateX(-50%);}
+.s_titbox_01 h4 {float: left;}
+
+/* 서브페이지_02 */
+.img_c {position: relative; left: 50%; transform: translateX(-50%);}
+.s_02_ul li {font-size: 12px; color: #555; line-height: 25px;margin-left: 15px;}
+.s_02_ul li::before {content: "•";}
+
+/* 서브페이지_03 */
+.sub_03_h4 {font-size: 14px;  margin-bottom: 10px; color: #333;}
+.s_titbox .sub_03_p {color: #333; font-size: 13px; line-height: 20px;}
+.sub_03_t_box {color: #333; font-size: 13px; line-height: 20px; padding: 10px;}
+
+.con_btn01 {float: right;}
+.con_btn01 a {font-size: 14px; font-weight: bold; border: 1px solid #d1d1d1; background: #f4f4f4; border-radius: 3px; padding: 5px 10px; margin-left: 6px;}
+
+/* 서브페이지_06 */
+.tit_t3 {font-size: 18px; text-align: center; margin-top: 45px;}
+.info_l {width: 25%; float: left;}
+.info_l img{width: 80%;}
+
+.info_r {width: 75%; float: left; text-align: justify; padding-left: 15px;}
+.info_r .text_right {text-align: right; font-weight: bold;}
+
+.info_t {font-size: 15px; line-height: 20px;}
+
